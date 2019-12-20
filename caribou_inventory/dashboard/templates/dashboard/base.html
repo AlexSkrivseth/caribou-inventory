@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Caribou Creek Inventory</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style media="screen">
+
+      button {
+        margin: 0px 2px;
+      }
+
+    </style>
+  </head>
+
+
+  <body>
+
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+
+
+                <a class='navbar-brand text-white font-weight-bold'>CCLH INVENTORY</a>
+                <!-- <a class="navbar-brand px-2 mr-auto"><img src= '{% static "dashboard/nwtech.jpg"%}' alt="nw tech logo"alt="" width="75"></a> -->
+
+                <a class="nav-item text-uppercase text-white px-2">Welcome User</a>
+
+                <a class="nav-link" href="#">
+                  <button type="button" class="btn btn-primary nav-item">Log Out</button>
+                </a>
+
+
+
+      </nav>
+
+     {% block main %}
+     {% endblock %}
+   </body>
+ </html>
